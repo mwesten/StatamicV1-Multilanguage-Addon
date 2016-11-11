@@ -1,0 +1,41 @@
+# ---------------------------------------
+# Default Multilanguage config file
+# ---------------------------------------
+
+# select the default language(2 chars) that will be used on your site (is used as fallback)
+ml_default_language: nl
+
+# A list of languages(2 chars) that are in use on your site (note the missing `de` version that is not live yet)
+ml_languages:
+  - en
+  - nl
+
+# The locales that are used for the two character language
+ml_locales:
+  en: en_GB
+  nl: nl_NL
+  de: de_DE
+
+# The text used on the "language switcher" only the 'other' languages are show
+ml_switch_text:
+  en: "English version"
+  nl: "Nederlandse versie"
+  de: "Deutsche version"
+
+# When using BuiltWithBison, state the product routes here
+ml_prod_produrlroot:
+  en: /en/pendants
+  nl: /nl/hangers
+  de: /de/haenger
+
+# When using BuiltWithBison, state the actual product folders in use here
+# array of languages with the different product-groups(based on routes) below that, 
+# containing the actual product path
+ml_prod_paths:
+  en:    
+    pendants: products/en/pendants
+  nl:
+    hangers: products/nl/hangers
+  de:
+    haenger: products/de/haenger
+
